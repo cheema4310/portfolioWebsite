@@ -1,0 +1,141 @@
+header{
+    /* width: 90%;
+    margin: 0 auto; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    
+}
+
+.headerLogo > img{
+    width: 4rem;
+}
+
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+   
+
+
+}
+
+
+.navLinks > ul {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks > ul > li > a{
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--lightest-slate);
+
+}
+
+.navLinks > ul span{
+    color: var(--green);
+}
+
+.navLinks > ul > li:hover a{
+    color: var(--green);
+}
+
+
+
+.navLinks > ul > li:last-child a{
+    padding: .65rem 1rem;
+    border: var(--green) 1px solid; 
+    border-radius: 4px;
+    color: var(--green);
+    margin-left: 1rem;
+    background-color: transparent;
+}
+
+.navLinks > ul > li:last-child a:hover{
+    background-color: var(--green-hover);
+}
+
+.mobileNavLinks {
+    display: none;
+}
+
+
+
+
+@media (max-width : 786px){
+    .navLinks{
+        display: none;
+    }
+    
+    .mobileNavLinks {
+        display: block;
+      
+        background-color: var(--green-hover);
+
+      
+    }
+
+    .menuIcon{
+        color: var(--green);
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        z-index: 10;
+    }
+    .backdrop {
+        position: absolute;
+        background-color: var(--green-hover);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .backdrop > ul{
+        list-style: none;
+        background-color: var(--dark-navy);
+        position: absolute;
+        right: 0%;
+        top: 15%;
+        width: 100%; 
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        /* gap: 1rem; */
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .backdrop > ul > li a{
+        text-decoration: none;
+        color: var(--lightest-slate);
+        font-size: 1.1rem;
+    }
+    .backdrop > ul > li a span {
+        color: var(--green);
+    }
+
+    .backdrop > ul > li:last-child a{
+        padding: 0.65rem 1rem;
+        border: var(--green) 1px solid; 
+        border-radius: 4px;
+        color: var(--green);
+        margin-left: 1rem;
+        background-color: transparent;
+    }
+
+    .backdrop > ul > li:last-child{
+        padding: 0.65rem 0;
+    }
+    .backdrop > ul > li:last-child a:active{
+        background-color: var(--green-hover);
+    }
+}

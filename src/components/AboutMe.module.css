@@ -1,0 +1,188 @@
+.aboutWrapper{
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    
+}
+
+
+
+
+.mainHeading{
+    font-size: clamp(0.7rem,4vw, 1.4rem);
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: var(--lightest-slate);
+    
+}
+
+.mainHeading > span{
+    color: var(--green);
+    font-weight: 400;
+}
+
+.mainHeading::after{
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 18rem;
+    height: 0.07rem;
+    background-color: var(--lightest-navy);
+    top: -0.3rem;
+    margin-left: 1.5rem;
+
+}
+
+
+
+.flexContainer{
+    display: flex;
+
+    gap: 2rem;
+  
+    justify-content: center;
+   
+}
+
+.textArea{
+   
+    flex: 2;
+    color: var(--slate);
+
+}
+
+
+.textArea > p{
+   margin-bottom: 1.5rem;
+   font-weight: 300;
+  
+   letter-spacing: 0.05rem;
+   line-height: 1.5rem;
+   /* padding-right: 2.5rem; */
+   
+}
+
+.textArea > ul {
+
+    /* for two columns */
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+
+    list-style: none;
+    padding: 0.5rem;
+    margin: 2rem 0 6rem;
+
+
+}
+
+.textArea > ul > li{
+    position: relative;
+    padding-left: 1rem;
+    font-size: .87rem;
+    font-family: 'Noto Sans Mono', monospace;
+    letter-spacing: 0.12rem;
+    line-height: 2;
+}
+
+.textArea > ul > li::before {
+    /* content: "▹"; */
+    /* content: "\00A4";   square */
+
+    content: "\0240";
+    position: absolute;
+    left: 0px;
+    top: .4rem;
+    color: var(--green);
+  
+    line-height: 1;
+}
+
+
+.picFrame{
+    position: relative;
+    transition: all 1s linear;
+   
+    
+}
+
+.picFrame::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #64ffdbb7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    mix-blend-mode:multiply;
+    transition: all 0.25s linear;
+   
+   
+}
+
+.picFrame::after{
+    border: 0.2rem solid var(--green);
+    top: 0.6rem;
+    left: 0.6rem;
+    border-radius: .4rem;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transition: all 0.25s linear;
+  
+}
+
+
+.picFrame:hover::after{
+    top: 0.2rem;
+    left: 0.2rem;
+    
+}
+.picFrame:hover::before{
+    background-color: transparent;
+}
+.picFrame > img{
+    height: 18.75rem;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    border-radius: 0.3rem;
+    object-fit: cover;
+    
+   
+}
+
+
+
+@media (max-width: 678px){
+    .aboutWrapper{
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    .mainHeading{
+        font-size: clamp(0.6rem, 4vw, 1.2rem);
+    }
+    .mainHeading::after{
+        width: 11rem;
+    
+    }
+    .flexContainer{
+        flex-direction: column;
+        align-items: center;
+    
+       
+    }
+    .textArea > ul{
+        margin: 0;
+    }
+    
+    
+}

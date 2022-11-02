@@ -1,0 +1,83 @@
+.projectCard {
+    aspect-ratio: 1;
+    background-color: var(--light-navy) !important;
+    color: var(--slate);
+    transition: all 0.5s ease-in-out;
+    
+   
+  
+}
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.iconOne, .iconTwo {
+   font-size: 1.5rem;
+  
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconTwo > a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+.projectCard:hover {
+    transform: scale(1.04);
+}
+.projectCard:hover .cardContent > h4{
+    color: var(--green);
+}
+
+.cardContent{
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.cardContent > h4 {  
+    padding: 0 0 1rem;
+    color: var(--lightest-slate);
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    letter-spacing: 0.05rem;
+    
+
+}
+.cardContent > p{
+    text-indent: 5%;
+}
+
+.cardContent > ul {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    bottom: 2rem;
+    gap: 1rem;
+
+}
+.cardContent > ul > li {
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+
+
+@media (max-width : 1080px){
+    .cardContent > h4 {  
+        color: var(--lightest-slate);
+        font-size: clamp(0.5rem, 4vw, 1rem);
+        letter-spacing: 0.06rem;  
+        font-weight: 700;
+    
+    }
+}
+
+@media (max-width : 480px){
+
+}
