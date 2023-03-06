@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[719],{719:function(e,t,n){n.r(t);n(791);var o=n(184),s={position:"absolute",top:"50%",left:"50%",fontFamily:"'Roboto Condensed', sans-serif",color:"#64ffda",transform:"translate(-50%, -50%)",fontSize:"3rem"};t.default=function(){return(0,o.jsx)("div",{style:s,children:"Page Not found"})}}}]);
+//# sourceMappingURL=719.d66a8b63.chunk.js.map

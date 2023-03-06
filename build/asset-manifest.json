@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9102d4b0.css",
+    "main.js": "/static/js/main.a7f0bc44.js",
+    "static/css/289.88e01b9d.chunk.css": "/static/css/289.88e01b9d.chunk.css",
+    "static/js/289.1ba39691.chunk.js": "/static/js/289.1ba39691.chunk.js",
+    "static/js/719.d66a8b63.chunk.js": "/static/js/719.d66a8b63.chunk.js",
+    "static/css/3.835684bf.chunk.css": "/static/css/3.835684bf.chunk.css",
+    "static/js/3.b09f6745.chunk.js": "/static/js/3.b09f6745.chunk.js",
+    "static/media/CheemaLebensLauf.pdf": "/static/media/CheemaLebensLauf.80c44de97d2b8b8fa78c.pdf",
+    "static/media/dp.jpg": "/static/media/dp.1d868208dd59a087db31.jpg",
+    "index.html": "/index.html",
+    "main.9102d4b0.css.map": "/static/css/main.9102d4b0.css.map",
+    "main.a7f0bc44.js.map": "/static/js/main.a7f0bc44.js.map",
+    "289.88e01b9d.chunk.css.map": "/static/css/289.88e01b9d.chunk.css.map",
+    "289.1ba39691.chunk.js.map": "/static/js/289.1ba39691.chunk.js.map",
+    "719.d66a8b63.chunk.js.map": "/static/js/719.d66a8b63.chunk.js.map",
+    "3.835684bf.chunk.css.map": "/static/css/3.835684bf.chunk.css.map",
+    "3.b09f6745.chunk.js.map": "/static/js/3.b09f6745.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9102d4b0.css",
+    "static/js/main.a7f0bc44.js"
+  ]
+}
