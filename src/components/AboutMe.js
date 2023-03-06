@@ -1,15 +1,33 @@
+import { useEffect } from "react";
 import classes from "./AboutMe.module.css";
 import imageUrl from "../assests/dp.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const AboutMe = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="about">
       <div className={classes.aboutWrapper}>
-        <div className={classes.mainHeading}>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1700"
+          data-aos-easing="ease-in-sine"
+          className={classes.mainHeading}
+        >
           <span>01.</span> About Me
         </div>
         <div className={classes.flexContainer}>
-          <div className={classes.textArea}>
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1300"
+            data-aos-easing="ease-in-sine"
+            className={classes.textArea}
+          >
             <p>
               Hello! I am Cheema and I enjoy long romantic walks to the fridge
               while creating things on the Internet. I love to bring my
@@ -43,7 +61,12 @@ const AboutMe = () => {
               <li>Next.js</li>
             </ul>
           </div>
-          <div className={classes.picArea}>
+          <div
+            data-aos="fade-up-left"
+            data-aos-duration="1300"
+            data-aos-easing="ease-in-sine"
+            className={classes.picArea}
+          >
             <div className={classes.picFrame}>
               <img src={imageUrl} alt="cheema" />
             </div>

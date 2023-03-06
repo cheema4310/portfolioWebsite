@@ -19,7 +19,12 @@ const LandingSection = () => {
               will do that.
             </p>
           </div>
-          <div className={classes.sayHello}>
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+            className={classes.sayHello}
+          >
             <a href="mailto:cheema4310@gmail.com">Say Hello</a>
           </div>
         </div>

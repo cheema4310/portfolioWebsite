@@ -11,7 +11,12 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className={classes.expWrapper}>
-        <div className={classes.expHeading}>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1700"
+          data-aos-easing="ease-in-sine"
+          className={classes.expHeading}
+        >
           <h2>
             <span>02.</span> Where I've Worked
           </h2>
@@ -59,7 +64,12 @@ const Experience = () => {
               FYP
             </div>
           </div>
-          <div className={classes.allContent}>
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1700"
+            data-aos-easing="ease-in-sine"
+            className={classes.allContent}
+          >
             <div
               className={
                 toggleState === 1

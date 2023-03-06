@@ -1,9 +1,12 @@
-import React from "react";
 import cv from "../assests/CheemaLebensLauf.pdf";
 
 const NavLinks = () => {
   return (
-    <ul>
+    <ul
+      data-aos="zoom-in-left"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1000"
+    >
       <li>
         <a href="/#about">
           <span>01.</span> About

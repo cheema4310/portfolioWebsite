@@ -6,13 +6,19 @@ import classes from "./ProjectCard.module.css";
 import Card from "../UI/Card";
 
 const ProjectCard = (props) => {
-  const { title, des, tech, gitLink } = props.project;
+  const { title, des, tech, gitLink, url } = props.project;
 
   return (
-    <Card className={classes.projectCard}>
+    <Card
+      dataAos={props.index % 2 ? "flip-right" : "flip-left"}
+      dataAosDuration="1500"
+      className={classes.projectCard}
+    >
       <div className={classes.cardTop}>
         <div className={classes.iconOne}>
-          <FaLink className="fa-duotone" />
+          <a href={url ? url : gitLink} target="_blank" rel="noreferrer">
+            <FaLink />
+          </a>
         </div>
         <div className={classes.iconTwo}>
           <a href={gitLink} target="_blank" rel="noreferrer">
