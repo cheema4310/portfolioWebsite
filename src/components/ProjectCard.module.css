@@ -1,8 +1,15 @@
 .projectCard {
-  aspect-ratio: 1;
+  flex: 1 0 calc(33.33% - 20px);
+
   background-color: var(--light-navy) !important;
   color: var(--slate);
-  transition: all 0.5s ease-in-out;
+
+  height: 20rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cardTop {
   display: flex;
@@ -30,32 +37,34 @@
   color: var(--green);
 }
 
-.projectCard:hover {
-  transform: scale(1.04);
-}
 .projectCard:hover .cardContent > h4 {
   color: var(--green);
 }
 
 .cardContent {
-  margin-top: 2rem;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
 }
 .cardContent > h4 {
-  padding: 0 0 1rem;
   color: var(--lightest-slate);
   font-size: clamp(0.5rem, 4vw, 1rem);
   letter-spacing: 0.05rem;
+  text-align: center;
 }
 .cardContent > p {
-  text-indent: 5%;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .cardContent > ul {
   list-style: none;
-  position: absolute;
+  /* position: absolute; */
   display: flex;
-  bottom: 2rem;
+
   gap: 1rem;
 }
 .cardContent > ul > li {
@@ -74,5 +83,5 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 786px) {
 }

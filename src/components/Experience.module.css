@@ -1,156 +1,145 @@
-.expWrapper{
-    width: 56%;
-    margin: 10rem auto;
-    font-family: 'Noto Sans Mono', monospace;
-
+.expWrapper {
+  width: 56%;
+  margin: 10rem auto;
+  font-family: "Noto Sans Mono", monospace;
 }
 
 .expHeading {
-    margin: 2rem 0 4rem;
+  margin: 2rem 0 4rem;
 }
 
 .expHeading > h2 {
-    padding: .7rem 0;
-    
-    font-size: clamp(0.7rem,4vw, 1.4rem);
-    color: var(--lightest-slate);
+  padding: 0.7rem 0;
+
+  font-size: clamp(0.7rem, 4vw, 1.4rem);
+  color: var(--lightest-slate);
 }
 
-.expHeading > h2 span{
-    color: var(--green);
-    font-weight: 400;
+.expHeading > h2 span {
+  color: var(--green);
+  font-weight: 400;
 }
 
-.expHeading > h2::after{
-    position: relative;
-    content: "";
-    display: inline-block;
-    width: 18rem;
-    height: 0.07rem;
-    background-color: var(--lightest-navy);
-    top: -0.3rem;
-    margin-left: 1.5rem;
-
+.expHeading > h2::after {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 18rem;
+  height: 0.07rem;
+  background-color: var(--lightest-navy);
+  top: -0.3rem;
+  margin-left: 1.5rem;
 }
 
 .expContent {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    color: var(--lightest-slate);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  color: var(--lightest-slate);
 }
-.tabs{
-    flex: 1;
-}
-
-.tab{
-    padding: 0.75rem 1rem;
-    font-size: .9rem;
-    letter-spacing: .05rem;
-    color: var(--lightest-slate);
-    text-align: center;
-    font-weight: 300;
-    border-left: 0.16rem solid var(--lightest-navy);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-family: 'Roboto Condensed', sans-serif;
-    
-  
+.tabs {
+  flex: 1;
 }
 
-.activeTab{
-    color: var(--green);
-    background-color: var(--green-hover);
-    border-left: 0.12rem solid var(--green);
+.tab {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  color: var(--lightest-slate);
+  text-align: center;
+  font-weight: 400;
+  border-left: 0.16rem solid var(--lightest-navy);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.allContent{
-    flex: 4;
+.activeTab {
+  color: var(--green);
+  background-color: var(--green-hover);
+  border-left: 0.12rem solid var(--green);
 }
 
-
-
+.allContent {
+  flex: 4;
+}
 
 .content {
-    display: none;
-    padding: 0 1rem;
-   
+  display: none;
+  padding: 0 1rem;
 }
 
 .content > h4 {
-   
-    font-weight: 700;
-    font-size: 1.2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
 
-    color: var(--green);
-    padding: 0.5rem 0;
+  color: var(--green);
+  padding: 0.5rem 0;
 }
 .content > p {
-    font-weight: 300;
-    padding: 0.3rem 0 1rem;
-    font-size: 0.7rem;
-
+  font-weight: 300;
+  padding: 0.3rem 0 1rem;
+  font-size: 0.7rem;
 }
 
 .content > ul {
-    list-style: none;
-    
+  list-style: none;
 }
 
 .content > ul > li {
-    line-height: 1.5rem;
-    font-size: 0.9rem;
-    padding-left: 1.6rem;
-    font-weight: 400;
-    letter-spacing: 0.05rem;
-    position: relative;
-    font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.06rem;
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .content > ul > li::before {
-    content: "\0240";
-    position: absolute;
-    left: 0px;
-    font-weight: 700;
-    color: var(--green);
-  
-
+  content: "\0240";
+  position: absolute;
+  left: 0px;
+  font-weight: 700;
+  color: var(--green);
 }
 
-.activeContent{
-    display: block;
+.activeContent {
+  display: block;
 }
 
+@media (max-width: 786px) {
+  .expWrapper {
+    width: 90%;
+  }
+  .expContent {
+    flex-direction: column;
+  }
+  .expHeading > h2 {
+    padding: 0.5rem 0;
 
-@media (max-width : 786px){
-    .expWrapper{
-        width: 90%;
-    }
-    .expContent{
-        flex-direction: column;
-    }
-    .expHeading > h2 {
-        padding: .5rem 0;
-        
-        font-size: clamp(0.6rem, 4vw, 1rem);
-        color: var(--lightest-slate);
-    }
-    .expHeading > h2::after{
-        width: 8rem;
-    }
-    .tabs {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    .tab{
-        border-left: none;
-        border-bottom: 0.12rem solid var(--lightest-navy);
-    }
-    .activeTab{
-        border-bottom: 0.16rem solid var(--green);
-    }
-   
+    font-size: clamp(0.6rem, 4vw, 1rem);
+    color: var(--lightest-slate);
+  }
+  .expHeading > h2::after {
+    width: 8rem;
+  }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .tab {
+    border-left: none;
+    border-bottom: 0.12rem solid var(--lightest-navy);
+    font-size: 0.9rem;
+    flex: 1 0 calc(50% - 10px);
+  }
+  .activeTab {
+    border-bottom: 0.16rem solid var(--green);
+  }
 }

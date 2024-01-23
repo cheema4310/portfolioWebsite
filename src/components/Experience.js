@@ -13,7 +13,7 @@ const Experience = () => {
       <div className={classes.expWrapper}>
         <div
           data-aos="fade-right"
-          data-aos-duration="1700"
+          data-aos-duration="700"
           data-aos-easing="ease-in-sine"
           className={classes.expHeading}
         >
@@ -31,7 +31,7 @@ const Experience = () => {
               }
               onClick={() => toggleTab(1)}
             >
-              Freelancer
+              E-commerce
             </div>
             <div
               className={
@@ -51,7 +51,7 @@ const Experience = () => {
               }
               onClick={() => toggleTab(3)}
             >
-              CyanaBot
+              Freelancer
             </div>
             <div
               className={
@@ -66,7 +66,7 @@ const Experience = () => {
           </div>
           <div
             data-aos="zoom-in-up"
-            data-aos-duration="1700"
+            data-aos-duration="700"
             data-aos-easing="ease-in-sine"
             className={classes.allContent}
           >
@@ -77,15 +77,17 @@ const Experience = () => {
                   : classes.content
               }
             >
-              <h4>Self-Taught Freelancer</h4>
-              <p>Jan 2021 - to Date</p>
+              <h4>E-commerce Enthusiast</h4>
+              <p>Jul 2023 - Oct 2023</p>
               <ul>
                 <li>
-                  Develop front-end User Interface using React, Redux and APIs.
+                  Developed a dropshipping e-commerce website, buypits.com, with
+                  a focus on delivering seamless user experiences.
                 </li>
                 <li>
-                  I try my best to deliver satisfying work in time. I value your
-                  time, effort and specially your trust in me.
+                  engaging user interfaces with React, while seamlessly
+                  integrating back-end functionality with Node.js, Express, and
+                  MongoDB.
                 </li>
               </ul>
             </div>
@@ -100,12 +102,15 @@ const Experience = () => {
               <p>Feb 2021 - Mar 2021</p>
               <ul>
                 <li>
-                  It was demanded to display tastewheel with flavors and a
-                  portion dedicated to certain flavor of chips.
+                  Developing a tastewheel in Chart.js, showcasing various
+                  flavors of chips in Pie Chart and upon onClick, directing
+                  users to a comprehensive display of all chips associated with
+                  the selected flavor.
                 </li>
                 <li>
-                  when clicked on, will be directed to serach results page.
-                  Chart.js made everything pretty easy for me
+                  An interactive experience by integrating Chart.js, enabling
+                  users to navigate to a dedicated search results page simply by
+                  clicking on a flavor.
                 </li>
               </ul>
             </div>
@@ -116,11 +121,20 @@ const Experience = () => {
                   : classes.content
               }
             >
-              <h4>IOT @ CyanaBot</h4>
-              <p>March - 2021</p>
+              <h4>Independent Freelancer</h4>
+              <p>Jan 2021 - to Date</p>
               <ul>
-                <li>CyanaBot is upcomming leading world company </li>
-                <li>point number two is what number is </li>
+                <li>
+                  Proficient in front-end development utilizing technologies
+                  such as React, Redux, and UI/UX design, with expertise in
+                  back-end technologies including Node.js, Express, MongoDB, and
+                  REST APIs.
+                </li>
+                <li>
+                  Committed to delivering high-quality work within specified
+                  timelines. I prioritize your time, effort and most
+                  importantly, your trust in my abilities.
+                </li>
               </ul>
             </div>
             <div
@@ -130,17 +144,20 @@ const Experience = () => {
                   : classes.content
               }
             >
-              <h4>Web and IOT @ FYP</h4>
+              <h4>Web and IoT Project @ FYP</h4>
               <p>Nov 2021 - jan 2022</p>
               <ul>
                 <li>
-                  I helped undergraduates with their Final-Year-Project which
-                  was controlling and monitoring house environment using Android
-                  App.
+                  Provided guidance and support to undergraduate students
+                  working on their Final-Year-Projects, focusing on the
+                  development of a system for controlling and monitoring house
+                  environments using an Android App.
                 </li>
                 <li>
-                  I studied C++ in University which helped me understanding
-                  arduino.ino syntax and deploying it to ESP8266
+                  Leveraged my C++ expertise acquired during university studies
+                  to comprehend arduino.ino syntax and proficiently deploy it to
+                  ESP8266, enhancing my capabilities in the realm of Internet of
+                  Things (IoT).
                 </li>
               </ul>
             </div>

@@ -14,9 +14,9 @@ const Contact = () => {
           Get In Touch
         </h1>
         <p>
-          Although I'm not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I'll try my best to get back to you!
+          I am actively seeking new opportunities and welcome any inquiries or
+          job offers. Whether you have a potential opportunity or just want to
+          connect, feel free to reach out.
         </p>
 
         <div
@@ -30,8 +30,10 @@ const Contact = () => {
       </div>
       <div className={classes.footer}>
         <h6>
-          Designed by <a href="https://brittanychiang.com/">BrittanyChiang</a> &
-          Built by <span>Zubair Cheema</span>
+          Built by{" "}
+          <a href="https://cv.buypits.com/">
+            <span>Zubair Cheema</span>
+          </a>
         </h6>
       </div>
     </section>

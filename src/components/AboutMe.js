@@ -4,6 +4,10 @@ import imageUrl from "../assests/dp.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FrontendIcon from "./icons-components/Frontend";
+import BackendIcon from "./icons-components/Backend";
+import ToolsIcon from "./icons-components/Tools";
+import { backendBadges, frontendBadges, tools } from "./shared/data/badges";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -15,7 +19,7 @@ const AboutMe = () => {
       <div className={classes.aboutWrapper}>
         <div
           data-aos="fade-right"
-          data-aos-duration="1700"
+          data-aos-duration="700"
           data-aos-easing="ease-in-sine"
           className={classes.mainHeading}
         >
@@ -24,51 +28,90 @@ const AboutMe = () => {
         <div className={classes.flexContainer}>
           <div
             data-aos="zoom-in-right"
-            data-aos-duration="1300"
+            data-aos-duration="700"
             data-aos-easing="ease-in-sine"
             className={classes.textArea}
           >
             <p>
               Hello! I am Cheema and I enjoy long romantic walks to the fridge
-              while creating things on the Internet. I love to bring my
-              imagination to life. My interest in web development started back
-              in 2016, well first off i found it amusing because it is
-              challenging in many ways for a self-taught developer but
-              throughout recent years, I kept gaining valable experience in
-              HTML, CSS, Javascript, React, Express, MongoDB, Node.js and few
-              more.
+              while creating things on the Internet. Turning my imagination into
+              reality is my jam. I got into web development around 2016, and
+              honestly, it caught my eye because of the challenge it posed to a
+              self-taught developer like me. Over the years, though, I've
+              gathered valuable experience in HTML, CSS, Javascript, Tailwind
+              CSS, React, Next.js, Node.js, Express, MongoDB, and a few more
+              tricks up my sleeve.
             </p>
             <p>
-              I started working as freelancer on upwork and fiverr in 2021. I
-              practiced on many projects in past years to have essential
-              skillset for a full-stack developer. I went off track for few
-              months to help undergraduates with their Final-Year-Project based
-              on Web and IOT.
+              In 2021, I took a leap into freelancing on platforms like Upwork
+              and Fiverr. I've honed my skills through various projects,
+              striving to be the full-stack developer that every project needs.
+              For a few months, I took a detour to assist undergraduates with
+              their Final-Year-Projects, focusing on Web and IoT.
             </p>
             <p>
-              I am constantly seeking out new technologies and staying
-              up-to-date on trends. I would be thrilled to help you out
+              I'm always on the lookout for new technologies and like to stay in
+              the loop with the latest trends. If you've got a project, I'd be
+              more than thrilled to help you out!
             </p>
             <p>
               Here are a few technologies I have been working with recently:
             </p>
-            <ul>
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>Next.js</li>
-            </ul>
           </div>
-          <div
-            data-aos="fade-up-left"
-            data-aos-duration="1300"
-            data-aos-easing="ease-in-sine"
-            className={classes.picArea}
-          >
+
+          <div className={classes.picArea}>
             <div className={classes.picFrame}>
               <img src={imageUrl} alt="cheema" />
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.mySkills}>
+          <div className={classes.frontend}>
+            <div className={classes.icon}>
+              <FrontendIcon />
+            </div>
+            <div className={classes.title}>
+              <h3>Frontend</h3>
+            </div>
+            <div className={classes.badges}>
+              {frontendBadges.map((badge) => (
+                <div className={classes.skill}>
+                  <img alt={badge.title} src={badge.badgeUrl} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={classes.backend}>
+            <div className={classes.icon}>
+              <BackendIcon />
+            </div>
+            <div className={classes.title}>
+              <h3>Backend</h3>
+            </div>
+            <div className={classes.badges}>
+              {backendBadges.map((badge) => (
+                <div className={classes.skill}>
+                  <img alt={badge.title} src={badge.badgeUrl} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={classes.tools}>
+            <div className={classes.icon}>
+              <ToolsIcon />
+            </div>
+            <div className={classes.title}>
+              <h3>Tools</h3>
+            </div>
+            <div className={classes.badges}>
+              {tools.map((badge) => (
+                <div className={classes.skill}>
+                  <img alt={badge.title} src={badge.badgeUrl} />
+                </div>
+              ))}
             </div>
           </div>
         </div>

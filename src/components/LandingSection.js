@@ -1,3 +1,4 @@
+import JetIcon from "./icons-components/JetIcon";
 import classes from "./LandingSection.module.css";
 
 const LandingSection = () => {
@@ -6,17 +7,18 @@ const LandingSection = () => {
       <section id="Landing" className={classes.landingSection}>
         <div className={classes.landingWrapper}>
           <div className={classes.mainHeading}>
-            <h1>Zubair Cheema.</h1>
+            <h1>Zubair Cheema</h1>
           </div>
           <div className={classes.subHeading}>
-            <h2>I build web that sells.</h2>
+            <JetIcon />
+            <h2>
+              Ready to transform your digital vision into a stunning reality?
+            </h2>
           </div>
           <div className={classes.para}>
             <p>
-              I'm a Web Developer, specializing in building and
-              &#40;occasionally designing&#41; exceptional UX and UI to attract
-              right kinds of visitors. Websites promote you 24/7,No employee
-              will do that.
+              I'm a Full Stack Web Developer based in Solingen, Germany.
+              Websites promote you 24/7,No employee will do that.
             </p>
           </div>
           <div

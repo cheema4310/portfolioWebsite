@@ -1,142 +1,127 @@
 .workWrapper {
-    width: 86%;
-    margin: 0 auto;
-    
-    font-family: 'Roboto Condensed', sans-serif;
-    line-height: 1.3;
+  width: 86%;
+  margin: 0 auto;
 
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.3;
 }
 
 .workHeading {
-    padding: 1rem 0;
-    margin-bottom: 5rem;
+  padding: 1rem 0;
+  margin-bottom: 5rem;
 }
 
-.workHeading > h2{
-    font-size: clamp(0.7rem,4vw, 1.4rem);
-    font-weight: 700;
-    color: var(--lightest-slate);
-    font-family: 'Noto Sans Mono', monospace;
+.workHeading > h2 {
+  font-size: clamp(0.7rem, 4vw, 1.4rem);
+  font-weight: 700;
+  color: var(--lightest-slate);
+  font-family: "Noto Sans Mono", monospace;
 }
 
-.workHeading > h2 > span{
-    color: var(--green);
-    font-weight: 300;
+.workHeading > h2 > span {
+  color: var(--green);
+  font-weight: 300;
 }
 
 .workHeading > h2::after {
-    position: relative;
-    content: "";
-    display: inline-block;
-    width: 18rem;
-    height: 0.07rem;
-    background-color: var(--lightest-navy);
-    top: -0.3rem;
-    margin-left: 1.5rem;
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 18rem;
+  height: 0.07rem;
+  background-color: var(--lightest-navy);
+  top: -0.3rem;
+  margin-left: 1.5rem;
 }
 
-
-
 .workSubHeading {
-    text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 5rem;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 5rem;
 }
 
 .workSubHeading > h3 {
-    font-size: clamp(1rem, 4vw, 1.4rem);
-    color: var(--slate);
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  color: var(--slate);
 }
 
+.allProjects {
+  width: 88%;
+  margin: 0 auto;
 
-.allProjects{
-    width: 88%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
-    
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .showMoreBtn {
-    margin: 4rem 0;
-    text-align: center;
-    line-height: 1.3;
+  margin: 4rem 0;
+  text-align: center;
+  line-height: 1.3;
 }
 
-.showMoreBtn > button{
-    font-size: .8rem;
-  
-    padding: 1rem 1.75rem;
-    border-radius: 0.25rem;
-    border: var(--green) 1px solid;
-    color: var(--green);
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-    font-family: 'Noto Sans Mono', monospace;
+.showMoreBtn > button {
+  font-size: 0.8rem;
+
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+  border: var(--green) 1px solid;
+  color: var(--green);
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Noto Sans Mono", monospace;
 }
 
-.showMoreBtn > button:hover{
-    background: var(--green-hover);
+.showMoreBtn > button:hover {
+  background: var(--green-hover);
 }
 
-@media (max-width : 1080px){
-    .allProjects{
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(min-content, max-content);
-        grid-gap: 1rem;
-    }
+@media (max-width: 1080px) {
+  .allProjects {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-gap: 1rem;
+  }
 }
 
-
-@media (max-width : 786px){
-
-    .workHeading{
-        margin-bottom: 3rem;
-    }
-    .workHeading > h2{
-        font-size: clamp(0.5rem, 4vw, 1rem);
-    }
-    .workHeading > h2::after{
-        width: 12rem;
-    }
-    .allProjects{
-        width: 70%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(min-content, max-content);
-        grid-gap: 1rem;
-    }
-
+@media (max-width: 786px) {
+  .workHeading {
+    margin-bottom: 3rem;
+  }
+  .workHeading > h2 {
+    font-size: clamp(0.5rem, 4vw, 1rem);
+  }
+  .workHeading > h2::after {
+    width: 12rem;
+  }
+  .allProjects {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-gap: 1rem;
+  }
 }
 
+@media (max-width: 480px) {
+  .workHeading {
+    margin-bottom: 2rem;
+  }
+  .workHeading > h2 {
+    font-size: clamp(0.5rem, 4vw, 1rem);
+  }
 
-
-
-
-@media (max-width : 480px){
-    .workHeading{
-        margin-bottom: 2rem;
-    }
-    .workHeading > h2{
-        font-size: clamp(0.5rem, 4vw, 1rem);
-    }
-
-    .workHeading > h2::after{
-        width: 7rem;
-    }
-    .allProjects{
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: auto;
-        grid-gap: 1rem;
-    }
-
+  .workHeading > h2::after {
+    width: 7rem;
+  }
+  .allProjects {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+  }
 }
