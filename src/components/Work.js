@@ -3,61 +3,67 @@ import { v4 as uuidv4 } from "uuid";
 import ProjectCard from "./ProjectCard";
 import classes from "./Work.module.css";
 
+// images imports for Projects Card
+import bookingImage from "../assests/images/booking.png";
+import eComImage from "../assests/images/ecom.png";
+import generateImage from "../assests/images/imgGen.png";
+import quizImage from "../assests/images/loveQuiz.png";
+import homeAutoImage from "../assests/images/homeAuto.png";
+import wheelImage from "../assests/images/tasteWheel.png";
+
 const Dummy_Project_Data = [
   {
-    id: "nextjs-01",
+    id: "01",
     title: "Hair Salon Booking App",
     des: "The platform offers a visually appealing interface for clients to book appointments. Customers can effortlessly book their preferred services, and salon staff can manage appointments efficiently.",
     tech: ["Next.js", "Tailwind CSS", "MongoDB"],
     gitLink: "https://github.com/cheema4310/Reservation",
     url: "https://reservation-anu-cuts.vercel.app/",
-  },
-  {
-    id: "01",
-    title: "E-commerce Platform",
-    des: "The development of a robust e-commerce website leveraging the MERN stack. Specializing in dropshipping, the platform seamlessly connects customers with trending high-quality products.",
-    tech: ["React", "Express", "MongoDB", "NodeJS"],
-    gitLink: "https://deals.buypits.com",
-    url: "https://deals.buypits.com",
+    imageUrl: bookingImage,
   },
   {
     id: "02",
-    title: "OpenAI Text to Image",
-    des: "OpenAI has developed a powerful tool called DALL-E, which works by using a generative model called a GAN that has been trained on a vast dataset of images and textual descriptions.",
-    tech: ["HTML/CSS", "Node.js", "EJS", "OpenAI"],
-    gitLink: "https://github.com/cheema4310/imageGenerator",
-    url: "https://imggen-4h9z.onrender.com/",
+    title: "E-commerce Platform",
+    des: "The development of a robust e-commerce website leveraging the MERN stack. Specializing in dropshipping, the platform seamlessly connects customers with trending high-quality products.",
+    tech: ["React", "Express", "MongoDB", "Node.js", "Redux"],
+    gitLink: "https://deals.buypits.com",
+    url: "https://deals.buypits.com",
+    imageUrl: eComImage,
   },
   {
     id: "03",
-    title: "Love Quiz for fun",
-    des: "Came across an intriguing magazine article featuring a questionnaire. Based on the responses, individuals were characterized in a unique and engaging manner.",
-    tech: ["HTML", "CSS", "React"],
-    gitLink: "https://github.com/cheema4310/Love-Quiz",
-    url: "https://love-quiz-5405b.web.app/",
+    title: "OpenAI Text to Image",
+    des: "OpenAI has developed a powerful tool called DALL-E, which works by using a generative model called a GAN that has been trained on a vast dataset of images and textual descriptions.",
+    tech: ["HTML5", "CSS3", "Node.js", "EJS", "OpenAI", "Render"],
+    gitLink: "https://github.com/cheema4310/imageGenerator",
+    url: "https://imggen-4h9z.onrender.com/",
+    imageUrl: generateImage,
   },
-
   {
     id: "04",
-    title: "Internet of Things",
-    des: "Aiding final-year undergraduates in creating a Home Automation system, connected to a website for convenient household control. A Web IoT project that merges innovation with practicality.",
-    tech: ["ESP8266", "arduino.ino", "Javascript"],
-    gitLink: "https://github.com/cheema4310?tab=repositories",
-  },
-  {
-    id: "05",
-    title: "Data visualization in Chart.js",
-    des: "Developed a tastewheel enabling users to easily select their preferred chip flavor on Pie Chart and navigate to the corresponding page. This project marked my debut on Fiverr.",
-    tech: ["HTML/CSS", "Javascript", "Chart.js"],
-    gitLink: "https://github.com/cheema4310/Data-visualization-Chart-js",
+    title: "Love Quiz for fun",
+    des: "Came across an intriguing magazine article featuring a questionnaire. Based on the responses, individuals were characterized in a unique and engaging manner.",
+    tech: ["HTML5", "CSS3", "React", "Firebase"],
+    gitLink: "https://github.com/cheema4310/Love-Quiz",
+    url: "https://love-quiz-5405b.web.app/",
+    imageUrl: quizImage,
   },
 
   {
+    id: "05",
+    title: "Internet of Things",
+    des: "Aiding final-year undergraduates in creating a Home Automation system, connected to a website for convenient household control. A Web IoT project that merges innovation with practicality.",
+    tech: ["Arduino", "JavaScript"],
+    gitLink: "https://github.com/cheema4310?tab=repositories",
+    imageUrl: homeAutoImage,
+  },
+  {
     id: "06",
-    title: "Auth 101",
-    des: "To practice user authentication, and enabling hashes and salts to ensure high-end security ",
-    tech: ["React", "Express", "MongoDB", "JWT"],
-    gitLink: "https://github.com/cheema4310/Redux-Practice",
+    title: "Data visualization in Chart.js",
+    des: "Developed a tastewheel enabling users to easily select their preferred chip flavor on Pie Chart and navigate to the corresponding page. This project marked my debut on Fiverr.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Chart.js"],
+    gitLink: "https://github.com/cheema4310/Data-visualization-Chart-js",
+    imageUrl: wheelImage,
   },
 ];
 

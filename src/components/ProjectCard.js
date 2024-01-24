@@ -4,9 +4,10 @@ import { v4 as uuidv4 } from "uuid";
 
 import classes from "./ProjectCard.module.css";
 import Card from "../UI/Card";
+import ProjectCardTechList from "./ProjectCardTechList";
 
 const ProjectCard = (props) => {
-  const { title, des, tech, gitLink, url } = props.project;
+  const { title, des, tech, gitLink, url, imageUrl } = props.project;
 
   return (
     <Card
@@ -14,6 +15,10 @@ const ProjectCard = (props) => {
       dataAosDuration="1500"
       className={classes.projectCard}
     >
+      <div className={classes.cardImage}>
+        <img src={imageUrl} alt={props.index} />
+      </div>
+
       <div className={classes.cardTop}>
         <div className={classes.iconOne}>
           <a href={url ? url : gitLink} target="_blank" rel="noreferrer">
@@ -32,7 +37,7 @@ const ProjectCard = (props) => {
 
         <ul>
           {tech.map((res) => (
-            <li key={uuidv4()}>{res}</li>
+            <ProjectCardTechList data={res} key={uuidv4()} />
           ))}
         </ul>
       </div>

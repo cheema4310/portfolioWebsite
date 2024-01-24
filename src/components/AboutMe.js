@@ -7,7 +7,11 @@ import "aos/dist/aos.css";
 import FrontendIcon from "./icons-components/Frontend";
 import BackendIcon from "./icons-components/Backend";
 import ToolsIcon from "./icons-components/Tools";
-import { backendBadges, frontendBadges, tools } from "./shared/data/badges";
+import {
+  backendBadges,
+  frontendBadges,
+  toolsBadges,
+} from "./shared/data/badges";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -65,7 +69,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-
+        {/* MySkills Div */}
         <div className={classes.mySkills}>
           <div className={classes.frontend}>
             <div className={classes.icon}>
@@ -75,8 +79,8 @@ const AboutMe = () => {
               <h3>Frontend</h3>
             </div>
             <div className={classes.badges}>
-              {frontendBadges.map((badge) => (
-                <div className={classes.skill}>
+              {frontendBadges.map((badge, index) => (
+                <div key={index} className={classes.skill}>
                   <img alt={badge.title} src={badge.badgeUrl} />
                 </div>
               ))}
@@ -91,8 +95,8 @@ const AboutMe = () => {
               <h3>Backend</h3>
             </div>
             <div className={classes.badges}>
-              {backendBadges.map((badge) => (
-                <div className={classes.skill}>
+              {backendBadges.map((badge, index) => (
+                <div key={index} className={classes.skill}>
                   <img alt={badge.title} src={badge.badgeUrl} />
                 </div>
               ))}
@@ -107,8 +111,8 @@ const AboutMe = () => {
               <h3>Tools</h3>
             </div>
             <div className={classes.badges}>
-              {tools.map((badge) => (
-                <div className={classes.skill}>
+              {toolsBadges.map((badge, index) => (
+                <div key={index} className={classes.skill}>
                   <img alt={badge.title} src={badge.badgeUrl} />
                 </div>
               ))}

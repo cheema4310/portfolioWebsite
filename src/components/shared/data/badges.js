@@ -39,6 +39,11 @@ export const frontendBadges = [
     badgeUrl:
       "https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat",
   },
+  {
+    title: "Chart.js",
+    badgeUrl:
+      "https://img.shields.io/badge/Chart.js-fff?logo=chartdotjs&logoColor=FF6384&style=flat",
+  },
 ];
 
 export const backendBadges = [
@@ -53,6 +58,11 @@ export const backendBadges = [
       "https://img.shields.io/badge/Express-000?logo=express&logoColor=fff&style=flat",
   },
   {
+    title: "EJS",
+    badgeUrl:
+      "https://img.shields.io/badge/EJS-A91E50?logo=ejs&logoColor=B4CA65&style=flat",
+  },
+  {
     title: "MongoDB",
     badgeUrl:
       "https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat",
@@ -64,7 +74,7 @@ export const backendBadges = [
   },
 ];
 
-export const tools = [
+export const toolsBadges = [
   {
     title: "Git",
     badgeUrl:
@@ -91,6 +101,16 @@ export const tools = [
       "https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=000&style=flat",
   },
   {
+    title: "OpenAI",
+    badgeUrl:
+      "https://img.shields.io/badge/openai-000?logo=openai&logoColor=white&style=flat",
+  },
+  {
+    title: "Firebase",
+    badgeUrl:
+      "https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=flat",
+  },
+  {
     title: "Heroku",
     badgeUrl:
       "https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=fff&style=flat",
@@ -100,4 +120,16 @@ export const tools = [
     badgeUrl:
       "https://img.shields.io/badge/Render-46E3B7?logo=render&logoColor=000&style=flat",
   },
+  {
+    title: "Arduino",
+    badgeUrl:
+      "https://img.shields.io/badge/Arduino-12959C?logo=arduino&logoColor=fff&style=flat",
+  },
 ];
+
+const allBadges = frontendBadges.concat(backendBadges, toolsBadges);
+
+export const getBadgeUrl = (title) => {
+  const badgeObj = allBadges.find((badge) => badge.title === title);
+  return badgeObj.badgeUrl;
+};
