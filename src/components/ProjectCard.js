@@ -21,11 +21,13 @@ const ProjectCard = (props) => {
 
       <div className={classes.cardTop}>
         <div className={classes.iconOne}>
+          <span>Live Demo</span>
           <a href={url ? url : gitLink} target="_blank" rel="noreferrer">
             <FaLink />
           </a>
         </div>
         <div className={classes.iconTwo}>
+          <span>Source Code</span>
           <a href={gitLink} target="_blank" rel="noreferrer">
             <FaGithub />
           </a>

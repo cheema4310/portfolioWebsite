@@ -5,16 +5,18 @@
   color: var(--slate);
 
   min-height: 0;
-  min-width: 0;
+  /* min-width: 0; */
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  gap: 1rem;
 }
 .cardImage {
   width: 100%;
-  height: 100%;
+  height: 10rem;
 }
 .cardImage > img {
   width: 100%;
@@ -26,18 +28,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 1rem 0;
 }
 
 .iconOne,
 .iconTwo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 
   cursor: pointer;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.iconOne > span {
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 150%;
+
+  font-size: 0.9rem;
+  min-width: 5rem;
+}
+.iconTwo > span {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 130%;
+
+  font-size: 0.9rem;
+  min-width: 5rem;
+}
+.iconOne:hover > span,
+.iconTwo:hover > span {
+  display: block;
+  color: var(--green);
 }
 
 .iconOne > a {
@@ -61,6 +87,7 @@
   align-items: center;
 
   height: 100%;
+  gap: 1rem;
 }
 .cardContent > h4 {
   color: var(--lightest-slate);
@@ -75,10 +102,10 @@
 
 .cardContent > ul {
   list-style: none;
-  /* position: absolute; */
   display: flex;
+  flex-wrap: wrap;
 
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .cardContent > ul > li {
   font-family: "Noto Sans Mono", monospace;

@@ -35,6 +35,11 @@ export const frontendBadges = [
       "https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=flat",
   },
   {
+    title: "TypeScript",
+    badgeUrl:
+      "https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=fff&style=flat",
+  },
+  {
     title: "Tailwind CSS",
     badgeUrl:
       "https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat",
@@ -42,7 +47,7 @@ export const frontendBadges = [
   {
     title: "Chart.js",
     badgeUrl:
-      "https://img.shields.io/badge/Chart.js-fff?logo=chartdotjs&logoColor=FF6384&style=flat",
+      "https://img.shields.io/badge/Chart.js-f5788d?logo=chartdotjs&logoColor=fff&style=flat",
   },
 ];
 
@@ -103,7 +108,7 @@ export const toolsBadges = [
   {
     title: "OpenAI",
     badgeUrl:
-      "https://img.shields.io/badge/openai-000?logo=openai&logoColor=white&style=flat",
+      "https://img.shields.io/badge/OpenAI-000?logo=openai&logoColor=white&style=flat",
   },
   {
     title: "Firebase",

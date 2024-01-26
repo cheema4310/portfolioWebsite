@@ -73,7 +73,9 @@ const AboutMe = () => {
         <div className={classes.mySkills}>
           <div className={classes.frontend}>
             <div className={classes.icon}>
-              <FrontendIcon />
+              <div className={classes.iconBg}>
+                <FrontendIcon />
+              </div>
             </div>
             <div className={classes.title}>
               <h3>Frontend</h3>
@@ -89,7 +91,9 @@ const AboutMe = () => {
 
           <div className={classes.backend}>
             <div className={classes.icon}>
-              <BackendIcon />
+              <div className={classes.iconBg}>
+                <BackendIcon />
+              </div>
             </div>
             <div className={classes.title}>
               <h3>Backend</h3>
@@ -105,7 +109,9 @@ const AboutMe = () => {
 
           <div className={classes.tools}>
             <div className={classes.icon}>
-              <ToolsIcon />
+              <div className={classes.iconBg}>
+                <ToolsIcon />
+              </div>
             </div>
             <div className={classes.title}>
               <h3>Tools</h3>
