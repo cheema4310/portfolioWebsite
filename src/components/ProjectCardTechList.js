@@ -7,7 +7,7 @@ const ProjectCardTechList = ({ data }) => {
   return (
     <li className={classes.techList}>
       <div className={classes.techBadge}>
-        <img src={imageUrl} alt="html" />
+        <img src={imageUrl} alt={data} />
       </div>
     </li>
   );

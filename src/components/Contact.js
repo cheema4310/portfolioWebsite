@@ -25,7 +25,7 @@ const Contact = () => {
           data-aos-duration="1000"
           className={classes.sayHelloBtn}
         >
-          <a href="mailto:cheema4310@gmail.com"> Say Hello </a>
+          <a href="mailto:cheema4310@gmail.com">Get Started</a>
         </div>
       </div>
       <div className={classes.footer}>

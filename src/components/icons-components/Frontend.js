@@ -4,8 +4,8 @@ const FrontendIcon = () => {
   return (
     <svg
       fill="#64ffda"
-      width="80px"
-      height="80px"
+      width="45px"
+      height="45px"
       viewBox="-1.5 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

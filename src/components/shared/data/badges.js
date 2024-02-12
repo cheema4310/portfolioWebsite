@@ -10,6 +10,11 @@ export const frontendBadges = [
       "https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat",
   },
   {
+    title: "SCSS",
+    badgeUrl:
+      "https://img.shields.io/badge/SASS-hotpink?logo=sass&logoColor=fff&style=flat",
+  },
+  {
     title: "JavaScript",
     badgeUrl:
       "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat",
@@ -76,6 +81,16 @@ export const backendBadges = [
     title: "Mongoose",
     badgeUrl:
       "https://img.shields.io/badge/Mongoose-800?logo=mongoose&logoColor=fff&style=flat",
+  },
+  {
+    title: "Prisma",
+    badgeUrl:
+      "https://img.shields.io/badge/Prisma-3982CE?logo=prisma&logoColor=fff&style=flat",
+  },
+  {
+    title: "Prisma",
+    badgeUrl:
+      "https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=fff&style=flat",
   },
 ];
 

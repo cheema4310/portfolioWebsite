@@ -140,7 +140,7 @@
   margin-top: 9rem;
   width: 100%;
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 .frontend,
 .backend,
@@ -155,8 +155,8 @@
 
 .iconBg {
   background-color: var(--green-hover);
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +167,7 @@
   width: 100%;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  color: var(--lightest-slate);
+  color: var(--green);
   font-family: "Roboto Condensed", sans-serif;
   border-bottom: var(--lightest-navy) solid 2px;
 }

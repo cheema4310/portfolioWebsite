@@ -4,8 +4,8 @@ const BackendIcon = () => {
   return (
     <svg
       fill="#64ffda"
-      width="80px"
-      height="80px"
+      width="60px"
+      height="60px"
       viewBox="0 -8 72 72"
       id="Layer_1"
       data-name="Layer 1"
