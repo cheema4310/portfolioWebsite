@@ -1,18 +1,18 @@
-import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa";
-import { v4 as uuidv4 } from "uuid";
+import { FaGithub } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa';
+import { v4 as uuidv4 } from 'uuid';
 
-import classes from "./ProjectCard.module.css";
-import Card from "../UI/Card";
-import ProjectCardTechList from "./ProjectCardTechList";
+import classes from './ProjectCard.module.css';
+import Card from '../UI/Card';
+import ProjectCardTechList from './ProjectCardTechList';
 
 const ProjectCard = (props) => {
   const { title, des, tech, gitLink, url, imageUrl } = props.project;
 
   return (
     <Card
-      dataAos={props.index % 2 ? "flip-right" : "flip-left"}
-      dataAosDuration="1500"
+      dataAos={props.index % 2 ? 'flip-right' : 'flip-left'}
+      dataAosDuration="600"
       className={classes.projectCard}
     >
       <div className={classes.cardImage}>
