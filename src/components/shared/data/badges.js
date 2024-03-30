@@ -54,6 +54,11 @@ export const frontendBadges = [
     badgeUrl:
       'https://img.shields.io/badge/Chart.js-f5788d?logo=chartdotjs&logoColor=fff&style=flat',
   },
+  {
+    title: 'Framer Motion',
+    badgeUrl:
+      'https://img.shields.io/badge/Framer-black?style=flat&logo=framer&logoColor=blue',
+  },
 ];
 
 export const backendBadges = [

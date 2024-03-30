@@ -11,11 +11,21 @@ import quizImage from '../assests/images/loveQuiz.png';
 import homeAutoImage from '../assests/images/homeAuto.png';
 import wheelImage from '../assests/images/tasteWheel.png';
 import onlineTutorImage from '../assests/images/onlineTutor.png';
+import portfolioTemplateImage from '../assests/images/portfolioTemplate.png';
 import { useState } from 'react';
 
 const Dummy_Project_Data = [
   {
     id: '01',
+    title: 'API Driven Template',
+    des: 'A dynamic webpage integrating data from a provided API endpoint. It has different sections like a brief introduction, services offered, skills showcased, projects in slider, a career snapshot showing work experience and testimonials. Responsive and user-friendly',
+    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Node.js'],
+    gitLink: 'https://github.com/cheema4310/assignment-thePortfolyo',
+    url: 'https://assignment-theportfolyo.onrender.com/',
+    imageUrl: portfolioTemplateImage,
+  },
+  {
+    id: '02',
     title: 'Online Learning Platform',
     des: 'Designed & Developed to facilitate online learning experiences. It offers an environment for instructors to create and deliver engaging courses, while providing students with access to educational content. Learners can explore various subjects.',
     tech: ['React', 'Tailwind CSS', 'Express', 'Mongoose', 'JWT', 'Node.js'],
@@ -24,7 +34,7 @@ const Dummy_Project_Data = [
     imageUrl: onlineTutorImage,
   },
   {
-    id: '01',
+    id: '03',
     title: 'Hair Salon Booking App',
     des: 'The platform offers a visually appealing interface for clients to book appointments. Customers can effortlessly book their preferred services, and salon staff can manage appointments efficiently.',
     tech: ['Next.js', 'React', 'Tailwind CSS', 'MongoDB'],
@@ -33,31 +43,13 @@ const Dummy_Project_Data = [
     imageUrl: bookingImage,
   },
   {
-    id: '02',
+    id: '04',
     title: 'E-commerce Platform',
     des: 'The development of a robust e-commerce website leveraging the MERN stack. Specializing in dropshipping, the platform seamlessly connects customers with trending high-quality products.',
     tech: ['HTML5', 'CSS3', 'React', 'Express', 'Mongoose', 'Node.js', 'Redux'],
     gitLink: 'https://deals.buypits.com',
     url: 'https://deals.buypits.com',
     imageUrl: eComImage,
-  },
-  {
-    id: '03',
-    title: 'OpenAI Text to Image',
-    des: 'OpenAI has developed a powerful tool called DALL-E, which works by using a generative model called a GAN that has been trained on a vast dataset of images and textual descriptions.',
-    tech: ['HTML5', 'CSS3', 'Node.js', 'EJS', 'OpenAI', 'Render'],
-    gitLink: 'https://github.com/cheema4310/imageGenerator',
-    url: 'https://imggen-4h9z.onrender.com/',
-    imageUrl: generateImage,
-  },
-  {
-    id: '04',
-    title: 'Love Quiz for fun',
-    des: 'Came across an intriguing magazine article featuring a questionnaire. Based on the responses, individuals were characterized in a unique and engaging manner.',
-    tech: ['HTML5', 'CSS3', 'React', 'Firebase'],
-    gitLink: 'https://github.com/cheema4310/Love-Quiz',
-    url: 'https://love-quiz-5405b.web.app/',
-    imageUrl: quizImage,
   },
 
   {
@@ -75,6 +67,24 @@ const Dummy_Project_Data = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Chart.js'],
     gitLink: 'https://github.com/cheema4310/Data-visualization-Chart-js',
     imageUrl: wheelImage,
+  },
+  {
+    id: '07',
+    title: 'OpenAI Text to Image',
+    des: 'OpenAI has developed a powerful tool called DALL-E, which works by using a generative model called a GAN that has been trained on a vast dataset of images and textual descriptions.',
+    tech: ['HTML5', 'CSS3', 'Node.js', 'EJS', 'OpenAI', 'Render'],
+    gitLink: 'https://github.com/cheema4310/imageGenerator',
+    url: 'https://imggen-4h9z.onrender.com/',
+    imageUrl: generateImage,
+  },
+  {
+    id: '08',
+    title: 'Love Quiz for fun',
+    des: 'Came across an intriguing magazine article featuring a questionnaire. Based on the responses, individuals were characterized in a unique and engaging manner.',
+    tech: ['HTML5', 'CSS3', 'React', 'Firebase'],
+    gitLink: 'https://github.com/cheema4310/Love-Quiz',
+    url: 'https://love-quiz-5405b.web.app/',
+    imageUrl: quizImage,
   },
 ];
 
